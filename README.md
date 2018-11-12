@@ -44,6 +44,7 @@ cp ~/go/bin/terraform-provider-extip /vagrant/terraform.d/plugins/linux_amd64/
 #### Test plugin
 
 ```
+cd /vagrant
 terraform init
 terraform apply
 ```
