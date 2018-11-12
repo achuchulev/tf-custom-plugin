@@ -9,3 +9,5 @@
 *.tfvars
 
 .vagrant/
+
+Gemfile.lock
