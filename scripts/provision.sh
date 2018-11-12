@@ -39,8 +39,10 @@ which terraform &>/dev/null || {
   popd
 }
 
-# install tree
+# install some additional packages for kitchen test
 
-which tree &>/dev/null || {
-  apt-get install -y tree
+PACKAGES="jq vim ruby ruby-dev libsqlite3-dev gcc g++"
+
+which ${PACKAGES} &>/dev/null || {
+  apt-get install -y ${PACKAGES}
 }
