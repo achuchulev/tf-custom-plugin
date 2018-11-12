@@ -1,13 +1,12 @@
 # Terraform custom plugin installation
 
-## The purpose of the repo is to provide guidence on how to install custom plugins in Terraform
+## The purpose of the repo is to provide guidence on how to install custom plugins in Terraform. In this example the [terraform-provider-extip](https://github.com/petems/terraform-provider-extip) custom plugin that returns the external IP is used.
 
 ### Prerequisites
 
 * git
 * vagrant
 * virtualbox
-* terraform
 
 ### How to install
 
@@ -24,7 +23,7 @@ Run command: `vagrant up`
 
 * `vagrant up` will execute script that provision *golang-1.10* and *terraform*
 
-#### Compile a custom plugin, that in our case will be [terraform-provider-extip](https://github.com/petems/terraform-provider-extip)
+#### Compile a custom plugin, that 
 
 ```
 vagrant ssh 
