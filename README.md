@@ -19,9 +19,9 @@ cd tf-custom-plugin/
 
 #### Run Vagrant VM
 
-Run command: `vagrant up`
+`vagrant up`
 
-_`vagrant up` will run provision script that install *golang-1.10* and *terraform*_
+_the above command will execute provisioning script that install *golang-1.10*, *terraform* and all required packages for the test_
 
 #### Compile a custom plugin, that 
 
