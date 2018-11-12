@@ -1,6 +1,6 @@
 # Terraform custom plugin installation
 
-#### The purpose of the repo is to provide guidence on how to install custom plugins in Terraform. In this example the [terraform-provider-extip](https://github.com/petems/terraform-provider-extip) custom plugin is used to determine what external IP address we have.
+#### The purpose of the repo is to provide guidence on how to install custom plugins in Terraform. In this example the [terraform-provider-extip](https://github.com/petems/terraform-provider-extip) custom plugin is used to determine what external IP address we have. A Kitchen test is included.
 
 ### Requirements
 
@@ -21,7 +21,7 @@ cd tf-custom-plugin/
 
 Run command: `vagrant up`
 
-* `vagrant up` will execute script that provision *golang-1.10* and *terraform*
+_`vagrant up` will run provision script that install *golang-1.10* and *terraform*_
 
 #### Compile a custom plugin, that 
 
