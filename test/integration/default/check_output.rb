@@ -4,7 +4,7 @@ external_ip = attribute (
   "terraform output",
 )
 
-control "check_output" do
+control 'check_output' do
   describe external_ip do
     it { should not eq "127.0.0.1" }
   end
