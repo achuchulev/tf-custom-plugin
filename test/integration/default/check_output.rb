@@ -6,8 +6,8 @@ external_ip = attribute(
 
 control 'check_output' do
   describe external_ip do
-    it { should not eq "127.0.0.1" }
-    it { should not eq "" }
-    it { should not eq "nil" }
+    it { should_not eq '127.0.0.1' }
+    it { should_not eq '' }
+    it { should_not eq 'nil' }
   end
 end
