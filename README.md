@@ -23,7 +23,7 @@ cd tf-custom-plugin/
 
 ##### It will execute provisioning script that install *golang-1.10*, *terraform* and all required packages for the test
 
-#### Compile a custom plugin, that 
+#### Compile custom plugin
 
 ```
 vagrant ssh 
