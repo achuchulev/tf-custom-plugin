@@ -1,6 +1,6 @@
 # Terraform custom plugin installation
 
-## The purpose of the repo is to provide guidence on how to install custom plugins in Terraform. In this example the [terraform-provider-extip](https://github.com/petems/terraform-provider-extip) custom plugin that returns the external IP is used.
+#### The purpose of the repo is to provide guidence on how to install custom plugins in Terraform. In this example the [terraform-provider-extip](https://github.com/petems/terraform-provider-extip) custom plugin that returns the external IP is used.
 
 ### Prerequisites
 
@@ -8,7 +8,7 @@
 * vagrant
 * virtualbox
 
-### How to install
+## How to install
 
 #### Download the repo and go to the repo directory
 
