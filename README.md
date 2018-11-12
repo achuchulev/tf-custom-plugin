@@ -40,7 +40,7 @@ mkdir -p /vagrant/terraform.d/plugins/linux_amd64
 cp ~/go/bin/terraform-provider-extip /vagrant/terraform.d/plugins/linux_amd64/
 ```
 
-#### Test plugin
+#### Use plugin
 
 ```
 cd /vagrant
@@ -48,7 +48,7 @@ terraform init
 terraform apply
 ```
 
-Result should be similar to the one below:
+##### Result should be similar to the one below:
 
 ```
 $ terraform apply
@@ -59,4 +59,35 @@ Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 Outputs:
 
 external_ip = xxx.xxx.xxx.xxx
+```
+
+## How to test
+
+#### Install bundler
+
+```
+sudo gem install bundler
+cd /vagrant
+bundle install
+```
+
+#### Run the test:
+
+`bundle exec kitchen test`
+
+##### Successful test should be similar to the one below:
+
+```
+Profile: tests from {:path=>"/vagrant/test/integration/default"} (tests from {:path=>".vagrant.test.integration.default"})
+Version: (not specified)
+Target:  local://
+
+  ✔  check_output: xxx.xxx.xxx.xxx
+     ✔  xxx.xxx.xxx.xxx should not eq "127.0.0.1"
+     ✔  xxx.xxx.xxx.xxx should not eq ""
+     ✔  xxx.xxx.xxx.xxx should not eq "nil"
+
+
+Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
+Test Summary: 3 successful, 0 failures, 0 skipped
 ```
