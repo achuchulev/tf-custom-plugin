@@ -1,11 +1,11 @@
-terraform_extip = attribute(
-  "terraform_extip",
+external_ip = attribute (
+  "external_ip",
   description: "The Terraform configuration under test must define an " \
-  "terraform_extip",
+  "terraform output",
 )
 
 control "check_output" do
-  describe terraform_extip do
+  describe external_ip do
     it { should not eq "127.0.0.1" }
   end
 end
