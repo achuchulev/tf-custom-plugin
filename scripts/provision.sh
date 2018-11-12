@@ -38,3 +38,9 @@ which terraform &>/dev/null || {
   rm terraform_0.11.10_linux_amd64.zip
   popd
 }
+
+# install tree
+
+which tree &>/dev/null || {
+  apt-get install -y tree
+}
