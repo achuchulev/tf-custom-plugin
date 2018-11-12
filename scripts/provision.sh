@@ -40,9 +40,7 @@ which terraform &>/dev/null || {
 }
 
 # install some additional packages for kitchen test
-
 PACKAGES="jq vim ruby ruby-dev libsqlite3-dev gcc g++"
-
 which ${PACKAGES} &>/dev/null || {
   apt-get install -y ${PACKAGES}
 }
