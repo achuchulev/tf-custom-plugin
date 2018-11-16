@@ -9,5 +9,5 @@
 *.tfvars
 
 .vagrant/
-
+.kitchen/
 Gemfile.lock
